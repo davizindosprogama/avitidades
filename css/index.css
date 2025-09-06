@@ -1,0 +1,46 @@
+.btn {
+    border: none;
+    color:azure;
+    border-radius: 6px;
+    padding: 1%;
+    width: 12%;
+    text-decoration: none;
+    text-align: center;
+}
+.btn-voltar {
+    background-color: black; /* Vermelho */
+    cursor: pointer;
+    padding: 0.5%;
+    width: 12%;
+    height: 1.5%;
+    box-shadow: 2px 2px 5px grey;
+}
+.btn-success {
+    background-color: green; /* Verde */
+    cursor: pointer;
+}
+
+.btn-success:hover {
+    background-color: darkgreen; /* Verde escuro ao passar o mouse */
+    transform: o.3s;
+}
+
+.btn-warning {
+    background-color: orange; /* Laranja */
+    cursor: pointer;
+    box-shadow: 2px 2px 5px grey;
+}
+.btn-warning:hover {
+    background-color: darkorange; /* Laranja escuro ao passar o mouse */
+    transform: o.3s;
+}
+.table {
+    border: 1.4px solid black;
+    border-radius: 10px;
+
+}
+.thead {
+    border-bottom: 1.4px solid black;
+    font-size: 14px;
+    color: black;
+}
