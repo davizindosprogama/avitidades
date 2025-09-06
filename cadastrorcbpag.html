@@ -15,7 +15,8 @@
     <!-- Define o texto que aparecerá na aba do navegador -->
     <title>Contas</title>
 </head>
-
+<!-- Link que leva o usuário de volta para a página inicial do site -->
+<a href="index.html" class="btn btn-warning">Voltar a página inicial</a>
 <!-- Início da parte visível da página -->
 
 <body>
@@ -47,9 +48,66 @@
     <label for="obs">Observação</label>
     <input type="text" name="obs" id="obs" placeholder="Observação...">
     <br>
-    <br>
-    <!-- Link que leva o usuário de volta para a página inicial do site -->
-    <a href="index.html" class="btn btn-warning">Voltar a página inicial</a>
+    <table class="table">
+        <thead class="thead">
+            <tr>
+                <th>Tipo</th>
+                <th>Valor Inicial</th>
+                <th>Valor Devido</th>
+                <th>Data de Vencimento</th>
+                <th>Descontos</th>
+                <th>Juros</th>
+                <th>Observação</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Receber</td>
+                <td>R$ 100,00</td>
+                <td>R$ 90,00</td>
+                <td>2024-12-31</td>
+                <td>R$ 10,00</td>
+                <td>R$ 0,00</td>
+                <td>Pagamento antecipado</td>
+            </tr>
+            <tr>
+                <td>Pagar</td>
+                <td>R$ 200,00</td>
+                <td>R$ 210,00</td>
+                <td>2024-11-30</td>
+                <td>R$ 0,00</td>
+                <td>R$ 10,00</td>
+                <td>Atraso no pagamento</td>
+            </tr>
+            <tr>
+                <td>Receber</td>
+                <td>R$ 150,00</td>
+                <td>R$ 150,00</td>
+                <td>2024-10-15</td>
+                <td>R$ 0,00</td>
+                <td>R$ 0,00</td>
+                <td>Pagamento no prazo</td>
+            </tr>
+            <tr>
+                <td>Pagar</td>
+                <td>R$ 300,00</td>
+                <td>R$ 290,00</td>
+                <td>2024-09-20</td>
+                <td>R$ 10,00</td>
+                <td>R$ 0,00</td>
+                <td>Desconto por pagamento antecipado</td>
+            </tr>
+            <tr>
+                <td>Receber</td>
+                <td>R$ 250,00</td>
+                <td>R$ 260,00</td>
+                <td>2024-08-25</td>
+                <td>R$ 0,00</td>
+                <td>R$ 10,00</td>
+                <td>Atraso no pagamento</td>
+            </tr>
+        </tbody>
+    </table>
     <br>
     <p>&copy; 2025 Meu site. Todos os direitos reservados.</p>
     <!-- Insere uma quebra de linha abaixo do link para melhorar o espaçamento visual -->
