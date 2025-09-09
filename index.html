@@ -1,78 +1,44 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/index.css">
-    <title>Cheron'S</title>
+    <title>Document</title>
+    <link rel="stylesheet" href="css/csscalc.css">
 </head>
 
 <body>
-    <header>
-        <!--Aqui é o menu-->
-        <h1>Menu</h1>
-        <!--Define a seção de navegação do site-->
-        <nav>
-            <!--Oque vai -->
-            <ul>
-                <li> <a href="cadastroproduto.html" class="btn btn-voltar">Cadastro Produto</a> </li>
-                <br>
-                <li> <a href="cadastrovenda.html" class="btn btn-voltar">Cadastro Venda</a> </li>
-                <br>
-                <li> <a href="cadastropessoa.html" class="btn btn-voltar">Cadastro Pessoa</a> </li>
-                <br>
-                <li> <a href="cadastrorcbpag.html" class="btn btn-voltar">Contas a receber e pagar</a> </li>
-                <br>
-                <li> <a href="cadastroestrega.html" class="btn btn-voltar">Cadastro Entregas</a> </li>
-                <br>
-                <li> <a href="listapessoa.html" class="btn btn-voltar">Lista Pessoas</a> </li>
-            </ul>
-        </nav>
-    </header>
-    <!--Define uma seção específica dentro de uma página-->
-    <section>
-        <h2>sobre nós</h2>
-        <p>somos uma empresa de automação digital.</p>
-    </section>
-    <!--Representa um conteúdo independente, como posts de blogs, notícias e artigos-->
-    <article>
-        <h2>Noticia importante</h2>
-        <p>hoje foi lançado uma nova versão do html!</p>
-    </article>
-    <!--Usado para conteúdo secundário ou complementar, como barras laterais-->
-    <aside>
-        <h3>Links úteis</h3>
-        <ul>
-            <li><a href="#">Dicas de HTML</a></li>
-            <li><a href="#">Tutoriais de CSS</a></li>
-        </ul>
-    </aside>
-    <!--Define o rodapÈ da página ou de uma seção-->
-    <footer>
-        <p>&copy; 2025 Meu site. Todos os direitos reservados.</p>
-    </footer>
-    <figure>
-        <div style="display: flex; align-items: center; gap: 20px;">
+    <div class="calculator">
+        <div class="display" id="resultado">0</div>
 
-            <!-- Foto -->
-            <img src="messias.jpg" alt="Messias careca" style="width: 200px; border-radius: 10px;">
-            <div style="display: flex; align-items: center; gap: 20px;">
+        <div class="buttons">
+            <button class="btn" onclick="adicionarValor('7')">7</button>
+            <button class="btn" onclick="adicionarValor('8')">8</button>
+            <button class="btn" onclick="adicionarValor('9')">9</button>
+            <button class="btn op" onclick="adicionarValor('/')">/</button>
 
-                <!-- Foto -->
-                <img src="messias.jpg" alt="Messias careca" style="width: 200px; border-radius: 10px;">
-                <div style="display: flex; align-items: center; gap: 20px;">
+            <button class="btn" onclick="adicionarValor('4')">4</button>
+            <button class="btn" onclick="adicionarValor('5')">5</button>
+            <button class="btn" onclick="adicionarValor('6')">6</button>
+            <button class="btn op" onclick="adicionarValor('*')">×</button>
 
-                    <!-- Foto -->
-                    <img src="messias.jpg" alt="Messias careca" style="width: 200px; border-radius: 10px;">
-                    <div style="display: flex; align-items: center; gap: 20px;">
+            <button class="btn" onclick="adicionarValor('1')">1</button>
+            <button class="btn" onclick="adicionarValor('2')">2</button>
+            <button class="btn" onclick="adicionarValor('3')">3</button>
+            <button class="btn op" onclick="adicionarValor('-')">−</button>
 
-                        <!-- Foto -->
-                        <img src="messias.jpg" alt="Messias careca" style="width: 200px; border-radius: 10px;">
+            <button class="btn" onclick="adicionarValor('0')">0</button>
+            <button class="btn" onclick="adicionarValor('.')">.</button>
+            <button class="btn clear" onclick="limpar()">C</button>
+            <button class="btn op" onclick="adicionarValor('+')">+</button>
 
-                        <img src="messias.jpg" alt="Messias careca">
-                        <figcaption></figcaption>
-    </figure>
+            <button class="btn igual" onclick="calcular()">=</button>
+        </div>
+    </div>
+
+    <script src="js/index.js" defer></script>
 </body>
+
 
 </html>
